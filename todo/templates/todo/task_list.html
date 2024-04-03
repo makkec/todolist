@@ -18,11 +18,13 @@
     <a href="{% url 'login' %}">Login</a>
 {% endif %}
 
- <!-->   <h1>My Todo List</h1>
+<div id="search-add-wrapper">
     <form action="" method="get">
-        <input type="text" name="search-area">
+        <input type="text" name="search-area" placeholder="Search Tasks">
         <input type="submit" value="Search Task">
-    </form> -->
+    </form>
+    <a id="add-link" href="{% url 'task-create' %}">&#x2b;</a>
+</div>
 
 <div class="task-items-wrapper">
     {% for tasks in task %}

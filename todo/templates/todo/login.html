@@ -1,3 +1,7 @@
+{% extends 'todo/main.html' %}
+
+{% block content %}
+
 <h1>Login</h1>
 <form action="" method="post">
     {% csrf_token %}
@@ -6,3 +10,4 @@
 
     <p>Don't have an account yet? <a href="{% url 'register' %}">Register New Account</a></p>
 </form>
+{% endblock content %}
